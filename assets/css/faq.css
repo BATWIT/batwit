@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.karkulka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 55vh;
+    padding: 40px;
+}
+
+
+
+.accordionsd {
+    display: flex;
+    max-width: 1210px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    
+    border-radius: 25px;
+    
+}
+
+.accordionsd .image-box {
+    height: 360px;
+    width: 500px;
+    padding-right: 50px;
+}
+
+.accordionsd .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.accordionsd .accordion-text {
+    width: 60%;
+}
+
+.accordionsd .accordion-text .title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+    font-family: var(--ff-oxanium);
+}
+
+.accordionsd .accordion-text .faq-text {
+    margin-top: 25px;
+    height: 363px;
+    overflow-y: auto;
+}
+
+.faq-text::-webkit-scrollbar {
+    display: none;
+}
+
+.accordionsd .accordion-text li {
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.accordion-text li .question-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li .question-arrow .arrow {
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+    transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow {
+    color: #ffffff;
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+    color: #ffffff;
+}
+
+.accordion-text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text li p {
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    display: none;
+}
+
+.accordion-text li.showAnswer p {
+    display: block;
+}
+
+@media (max-width: 994px) {
+    .karkulka {
+        padding: 40px 20px;
+
+    }
+
+        .accordionsd {
+        max-width: 100%;
+        padding: 45px 60px 45px 60px;
+    }
+
+        .accordionsd .image-box {
+        height: 360px;
+        width: 220px;
+    }
+
+   .accordionsd .accordion-text {
+        width: 63%;
+    }
+}
+
+@media (max-width: 820px) {
+.accordionsd {
+        flex-direction: column;
+    }
+
+.accordionsd .image-box {
+        height: 360px;
+        width: 300px;
+        width: 100%;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+.accordionsd .accordion-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 538px) {
+    .accordionsd{
+        padding: 25px;
+    }
+
+    .accordion-text li p {
+        width: 98%;
+    }
+}
+
+
+/*kontakt for web*/
+.aboutq {
+    width: 100%;
+    min-height: 15vh;
+    background-image: linear-gradient(to right, rgb(0, 75, 146), rgb(41, 205, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(-1.5deg);
+    
+}
+
+
+
+.tekt {
+    width: 1450px;
+    max-width: 100%;
+    padding: 0 10px;
+    color: #fff;
+}

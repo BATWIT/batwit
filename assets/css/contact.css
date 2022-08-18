@@ -1,0 +1,245 @@
+.kontakt {
+    position: relative;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    display: flex;
+    background: url(asdsad.jpg);
+}
+
+.kontakt .kontainer {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    
+}
+
+.kontakt .kontainer .kontaktinfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.kontakt .kontainer .kontaktinfo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.kontakt .kontainer .kontaktinfo .infor {
+    position: relative;
+    margin: 20px 0;
+}
+
+
+.kontakt .kontainer .kontaktinfo .infor li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 25px 0px;
+    cursor: pointer;
+    align-items: flex-start;
+
+}
+
+
+.kontakt .kontainer .kontaktinfo .infor li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+
+}
+
+
+.kontakt .kontainer .kontaktinfo .infor li span:nth-child(1) .material-icons {
+    max-width: 100%;
+    opacity: 0.5;
+
+}
+
+.kontakt .kontainer .kontaktinfo .infor li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+.kontakt .kontainer .kontaktinfo .infor li:hover span:nth-child(1) .material-icons,
+.kontakt .kontainer .kontaktinfo .infor li:hover span:nth-child(2) {
+    opacity: 1;
+
+}
+
+.kontakt .kontainer .kontaktForm {
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.kontakt .kontainer .kontaktForm h2 {
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.kontakt .kontainer .kontaktForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox {
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox.w100 {
+    width: 100%;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox input,
+.kontakt .kontainer .kontaktForm .formBox .inputBox textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    resize: none;
+    outline: none;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox textarea {
+    min-height: 100px;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox input:focus~span,
+.kontakt .kontainer .kontaktForm .formBox .inputBox textarea:focus~span,
+.kontakt .kontainer .kontaktForm .formBox .inputBox input:valid~span,
+.kontakt .kontainer .kontaktForm .formBox .inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: blue;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.kontakt .kontainer .kontaktForm .formBox .inputBox input[type="submit"]:hover {
+    background: red;
+}
+
+@media (max-width: 1200px) {
+    .kontakt .kontainer {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+    }
+
+    .kontakt .kontainer .kontaktinfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .kontakt .kontainer .kontaktForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+
+
+    .kontakt .kontainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .kontakt .kontainer .kontaktForm {
+        width: 100%;
+        height: auto;
+    }
+
+    .kontakt .kontainer .kontaktinfo {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+
+    .kontakt .kontainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .kontakt .kontainer .kontaktForm {
+        width: 100%;
+        height: auto;
+    }
+
+    .kontakt .kontainer .kontaktinfo {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .kontakt .kontainer .kontaktForm .formBox .inputBox span {
+        font-size: 15px;
+    }
+
+}

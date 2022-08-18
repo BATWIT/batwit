@@ -1,0 +1,59 @@
+.newsect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.grid{
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.grid-item{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow:0 0 5px var(--marigold),
+            0 0 10px var(--marigold),
+            0 0 20px var(--marigold);;
+}
+
+.card-img{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 3rem;
+    text-align: center;
+}
+
+.card-header{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 60em) {
+    .newsect{
+        padding: 3rem;
+    }
+
+    .grid{
+        grid-gap: 3rem;
+    }
+}

@@ -1,0 +1,141 @@
+
+
+.h32 {
+    color: var(--white);
+    font-weight: var(--fw-800);
+    line-height: 1;
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 90px;
+}
+
+
+@media (max-width: 650px) {
+
+    .h32 {
+        color: var(--white);
+
+        line-height: 1;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+}
+
+
+
+/*card*/
+
+.containerr {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.containerr .cardd {
+    position: relative;
+    height: 300px;
+    width: 350px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--marigold),
+        0 0 10px var(--marigold),
+        0 0 20px var(--marigold);
+}
+
+.containerr .cardd .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ikonky {
+    text-align: center;
+    font-size: 70px;
+    color: #111;
+
+}
+
+.podnadpis {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.containerr .cardd .cover h1 {
+    font-size: 30px;
+    color: black;
+    font-family: 'Bangers', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.containerr .cardd .content-case {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr .cardd .content-case::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--marigold);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.containerr .cardd:hover .content-case::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.containerr .cardd .content-case .content {
+    position: relative;
+    padding: 20px;
+    transform: translateX(450px);
+    transition: 0.5s;
+}
+
+.containerr .cardd:hover .content-case .content {
+    transform: translateX(0);
+
+}
+
+.containerr .cardd .content-case .content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.containerr .cardd .content-case .content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
