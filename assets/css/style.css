@@ -1371,11 +1371,10 @@ transform: translateX(0);
 .parralax {
     height: 50vh;
     width: 100%;
-    background-image: url(/assets/images/security.jpg);
+    background-image: url("./assets/images/security.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
     
     
 }
@@ -1431,7 +1430,7 @@ transform: translateX(0);
                                 .parralax {
                                     height: 40vh;
                                     width: 100%;
-                                    background-image: url(/assets/images/security.jpg);
+                                    background-image: url("./assets/images/security.jpg");
                                     background-size: cover;
                                     background-position: center;
                                     background-attachment: fixed;
