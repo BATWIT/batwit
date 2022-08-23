@@ -49,3 +49,17 @@ window.addEventListener("scroll", function () {
 /*navbarnew*/
 
 console.log("Ako vidíme našiel si konzolu. Ak si šikovný a hladáš prácu kontaktuj nás :)")
+
+/*loader*/
+let loader = document.querySelector(".loader");
+window.onload = () => {
+    setTimeout(function () {
+        loader.style.opacity = "0";
+        loader.style.zIndex = "0";
+    }, 600);
+}
+
+
+$(function () {
+    $(".loader").show().fadeOut(800);
+})

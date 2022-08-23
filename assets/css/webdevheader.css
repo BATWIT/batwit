@@ -1123,3 +1123,45 @@ body {
     padding-bottom: 80px;
     font-size: 24px;
 }
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    z-index: 3000;
+    position: fixed;
+    transition: all 0.3s;
+
+}
+
+.loader .ring {
+    height: 45px;
+    width: 45px;
+    border: 5px solid #fff;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader .ring:after {
+    position: absolute;
+    content: '';
+    height: 45px;
+    width: 45px;
+    border: 5px solid #2196f3;
+    box-shadow: 0 0 10px #2196f3;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotate 1.5s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

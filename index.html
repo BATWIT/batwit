@@ -9,6 +9,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+
+<!--FADEINOU-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
    
 
@@ -40,8 +43,12 @@
   -->
 </head>
 
-<body id="top">
+<body id="top" class="transition">
+<body>
+    <div class="loader">
 
+        <div class="ring"></div>
+    </div>
     <!-- 
     - #HEADER
   -->
@@ -134,13 +141,13 @@
                 style="background-image: url('./assets/images/hero-bg.jpg')">
                 <div class="container">
                     <div class="hero-content">
-                        <h1 class="h1 hero-title">
+                        <h1 class="h1 hero-title" data-aos="fade-up" data-aos-duration="1500">
                             Základom je<span class="span">Originálnosť</span> 
                         </h1>
-                        <p class="hero-text">
+                        <p class="hero-text" data-aos="fade-up" data-aos-duration="1500">
                            Firma zaoberajúca sa bezpečnostou a tvorbou web stránok. Pre naších klientov davame 100% usilie.
                         </p>
-                        <button class="btn skewBg">Viac o nás</button>
+                        <button class="btn skewBg" data-aos="fade-up" data-aos-duration="1500">Viac o nás</button>
                     </div>
                     <!--skuska nootebok-->
                 </div>
@@ -150,10 +157,10 @@
       -->
     <h1 class="cardh">NAŠE SLUŽBY</h1>
     <h1 class="cardha"><i class="fas fa-angle-down"></i></h1>
-    <div class="containerr">
+    <div class="containerr" data-aos="fade-up" data-aos-duration="900">
         <div class="cardd" onclick="">
             
-            <div class="cover">
+            <div class="cover" >
                 <span class="ikonky"><i class="fas fa-code"></i>
                 <h1>Tvorba webu</h1>
                 <span class="podnadpis">Tvorba webu pomocou kodu.</span>
@@ -216,7 +223,7 @@
             <div class="cover">
                 <span class="ikonky"><i class="fas fa-user-shield"></i>
                     <h1>Dizajn webu</h1>
-                    <span class="podnadpis">Najbežnejšie zranitelnosti na webe.</span>
+                    <span class="podnadpis">Dizajn webstránok.</span>
             </div>
             <div class="content-case">
                 <div class="content">
@@ -249,8 +256,8 @@
 
 
 <div class="parralax" style="background-image: url('./assets/images/security.jpg')">
-    <a href="#" class="btn1">NIKDY NIEJE NESKORO!</a>
-    <h1 class="lorum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis omnis assumenda aperiam aliquid quo commodi non! Nesciunt, quo quidem ratione, doloremque debitis blanditiis </h1>
+    <a href="#" class="btn1" data-aos="fade-up" data-aos-duration="900">NIKDY NIEJE NESKORO!</a>
+    <h1 class="lorum" data-aos="fade-up" data-aos-duration="900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero officiis omnis assumenda aperiam aliquid quo commodi non! Nesciunt, quo quidem ratione, doloremque debitis blanditiis </h1>
     <br>
     
 </div>
@@ -259,13 +266,13 @@
 
 
 <!--responsive testimional slider-->
-<h1 class="cardh">PREČO SI VYBRAŤ NÁS?</h1>
+<h1 class="cardhad">PREČO SI VYBRAŤ NÁS?</h1>
 <h1 class="cardha">
     <i class="fas fa-angle-down"></i>
 </h1>
-    <section class="newsect">
+    <section class="newsect" data-aos="fade-up" data-aos-duration="900">
     <div class="grid">
-        <div class="grid-item"data-tilt>
+        <div class="grid-item" data-tilt>
             <div class="card" >
                 <img class="card-img" src="./assets/images/3.png" alt="">
                 <div class="card-content">
@@ -459,8 +466,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
